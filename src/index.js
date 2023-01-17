@@ -433,7 +433,13 @@ export default class RNPickerSelect extends PureComponent {
                     visible={showPicker}
                     transparent
                     animationType={animationType}
-                    supportedOrientations={['portrait', 'landscape']}
+                    supportedOrientations={[
+                        'portrait',
+                        'portrait-upside-down',
+                        'landscape',
+                        'landscape-left',
+                        'landscape-right',
+                    ]}
                     onOrientationChange={this.onOrientationChange}
                     {...modalProps}
                 >
